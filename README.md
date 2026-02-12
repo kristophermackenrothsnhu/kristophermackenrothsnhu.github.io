@@ -14,14 +14,17 @@ https://kristophermackenrothsnhu.github.io
 
 ## 📁 Repository Contents
 
-### /artifacts  
-Contains original and enhanced project artifacts demonstrating:
+### /Unenhanced Artifacts  
+Contains original project artifacts.
+
+### /Enhanced Artifacts  
+Contains enhanced project artifacts demonstrating:
 
 - Software Design and Engineering  
 - Algorithms and Data Structures  
 - Databases  
 
-### /narratives  
+### /Narratives  
 Written narratives explaining each enhancement, skills demonstrated, and alignment with course outcomes.
 
 ### /self-assessment  

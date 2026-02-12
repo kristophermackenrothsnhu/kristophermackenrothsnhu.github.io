@@ -27,9 +27,6 @@ Written narratives explaining each enhancement, skills demonstrated, and alignme
 ### /self-assessment  
 Professional self-assessment describing my growth, skills, and readiness for industry.
 
-### /videos  
-Link to informal code review video walkthrough.
-
 ### index.html  
 Main portfolio landing page.
 

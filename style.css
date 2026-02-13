@@ -102,3 +102,43 @@ li {
     margin-top: 5px;
 }
 
+/* Carousel container */
+.carousel {
+    position: relative;
+    max-width: 650px;       
+    margin: 15px auto;
+}
+
+/* Carousel arrows */
+.carousel button.prev,
+.carousel button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    color: white;
+    font-size: 1.8em;
+    padding: 5px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.2s;
+}
+
+.carousel button.prev:hover,
+.carousel button.next:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Left arrow */
+.carousel button.prev {
+    left: -40px;  /* adjust as needed */
+}
+
+/* Right arrow */
+.carousel button.next {
+    right: -40px; /* adjust as needed */
+}
+
+

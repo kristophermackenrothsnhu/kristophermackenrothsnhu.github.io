@@ -88,11 +88,13 @@ li {
 
 .project-image {
     width: 100%;
-    max-width: 850px;
-    margin-top: 15px;
+    max-width: 650px; 
+    display: block;    
+    margin: 15px auto;  
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 
 .caption {
     font-size: 0.9em;

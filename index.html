@@ -12,23 +12,24 @@
 <h1>Kristopher Mackenroth</h1>
 <h2>Computer Science ePortfolio</h2>
 
+<!-- Portfolio Screenshot Carousel -->
 <div class="section">
 <h3>Portfolio Preview</h3>
-<img src="assets/screenshots/mainPage.PNG" class="project-image">
-<p class="caption">
+
+<div class="carousel">
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+
+    <img src="assets/screenshots/mainPage.PNG" class="project-image" id="carousel-image">
+
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<p class="caption" id="carousel-caption">
 Main portfolio landing page demonstrating layout and navigation.
 </p>
-
 </div>
 
-<div class="section">
-<img src="assets/screenshots/login.PNG" class="project-image">
-<p class="caption">
-Login page for users to input credentials.
-</p>
-
-</div>
-  
+<!-- Professional Self-Assessment -->
 <div class="section">
 <h3>Professional Self-Assessment</h3>
 <a class="button" href="self-assessment/professional-self-assessment.docx">
@@ -36,6 +37,7 @@ Download Professional Self-Assessment
 </a>
 </div>
 
+<!-- Code Review Video -->
 <div class="section">
 <h3>Code Review Video</h3>
 <a class="button" href="https://www.youtube.com/watch?v=hpDyOmd3dPk" target="_blank">
@@ -43,18 +45,18 @@ Watch Informal Code Review
 </a>
 </div>
 
+<!-- Artifacts -->
 <div class="section">
 <h3>Artifacts</h3>
-
 <ul>
 <li><a href="artifacts/original.zip">Original Artifact</a></li>
 <li><a href="artifacts/enhanced.zip">Enhanced Artifact</a></li>
 </ul>
 </div>
 
+<!-- Narratives -->
 <div class="section">
 <h3>Narratives</h3>
-
 <ul>
 <li><a href="narratives/CS499_Mackenroth_Kristopher_Milestone_2_Narrative.docx">Software Design Narrative</a></li>
 <li><a href="narratives/CS499_Mackenroth_Kristopher_Milestone_3_Narrative.docx">Algorithms Narrative</a></li>
@@ -62,11 +64,34 @@ Watch Informal Code Review
 </ul>
 </div>
 
+<!-- Footer -->
 <div class="footer">
 CS Capstone Portfolio – Southern New Hampshire University
 </div>
 
 </div>
+
+<!-- Carousel JavaScript -->
+<script>
+const images = [
+    { src: "assets/screenshots/mainPage.PNG", caption: "Main portfolio landing page demonstrating layout and navigation." },
+    { src: "assets/screenshots/login.PNG", caption: "Login page for users to input credentials." },
+];
+
+let currentIndex = 0;
+
+function changeSlide(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) currentIndex = images.length - 1;
+    if (currentIndex >= images.length) currentIndex = 0;
+
+    const img = document.getElementById("carousel-image");
+    const caption = document.getElementById("carousel-caption");
+
+    img.src = images[currentIndex].src;
+    caption.textContent = images[currentIndex].caption;
+}
+</script>
 
 </body>
 </html>
